@@ -1,0 +1,18 @@
+[thread-S01_simple] checkpoints=6
+  step=4 next=[] route=simple
+  step=3 next=['finalize'] route=simple
+  step=2 next=['answer'] route=simple
+  step=1 next=['classify'] route=
+  step=0 next=['intake'] route=
+[thread-S04_risky] checkpoints=10
+  step=8 next=[] route=risky
+  step=7 next=['finalize'] route=risky
+  step=6 next=['answer'] route=risky
+  step=5 next=['evaluate'] route=risky
+  step=4 next=['tool'] route=risky
+[thread-S05_error] checkpoints=13
+  step=11 next=[] route=error
+  step=10 next=['finalize'] route=error
+  step=9 next=['dead_letter'] route=error
+  step=8 next=['retry'] route=error
+  step=7 next=['evaluate'] route=error
